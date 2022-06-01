@@ -1,0 +1,7 @@
+{
+    "recipesPrivateKey": "RECIPES_PRIVATE_KEY",
+    "port": "PORT",
+    "db": {
+        "connectionString": "DB_CONNECTION_STRING"
+    }
+}
