@@ -3,7 +3,6 @@ const express = require("express");
 const app = express();
 require('express-async-errors');
 
-
 //Modules
 const helmet = require("helmet");
 const mongoose = require("mongoose");
