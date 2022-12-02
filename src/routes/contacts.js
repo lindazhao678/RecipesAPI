@@ -8,6 +8,7 @@ const pool = mysql.createPool({
     user: 'root',
     password: 'root',
     database: 'recipes',
+    insecureAuth : true,
     port: 8889
 })
 
