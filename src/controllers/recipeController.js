@@ -20,7 +20,7 @@ module.exports = {
     },
 
     async getAllRecipes(req, res) {
-        const recipes = await Recipe.find({userId: ObjectId(req.user._id)}).sort("name")
+        const recipes = await Recipe.find().sort("name")
         res.send(recipes)
     },
 
