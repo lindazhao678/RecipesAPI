@@ -13,6 +13,7 @@ module.exports = {
         user = new User(
             _.pick(req.body, ["firstName", "lastName", "email", "password"])
         )
+        user.isAdmin = false
         const salt = await bcrypt.genSalt(10)
         user.password = await bcrypt.hash(user.password, salt)
 
