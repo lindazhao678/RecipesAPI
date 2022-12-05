@@ -1,5 +1,5 @@
 # Recipe Search APIs 
-
+## Live Site: https://recipes-api.herokuapp.com/api/recipes
 ## Project Description:
 Recipe Search APIs are the RESTful APIs for the [Recipe search App](https://github.com/lindazhao678/Recipe_search_app). 
 
