@@ -30,7 +30,9 @@ const userSchema = new mongoose.Schema({
         minLength: 5,
         maxLength: 1024,
     },
-    isAdmin: Boolean,
+    isAdmin: {
+        type: Boolean
+    },
     createDate: {
         type: Date,
         default: Date.now,
@@ -58,6 +60,7 @@ function validateUser(user) {
         lastName: Joi.string().min(2).max(50).required(),
         email: Joi.string().min(5).max(255).required().email(),
         password: Joi.string().min(5).max(50).required(),
+        isAdmin: Joi.boolean()
     })
     return schema.validate(user);
 }
